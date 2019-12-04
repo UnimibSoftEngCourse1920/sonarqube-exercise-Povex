@@ -128,6 +128,7 @@
                 </includes>
             </resource>
         </resources>
+        <pluginManagement>
         <plugins>
             <!--
             Both "org.apache" and "org.codehaus" are default providers of MOJO plugins
@@ -375,6 +376,7 @@
                 <version>2.7</version>
             </plugin>
         </plugins>
+        </pluginManagement> 
     </build>
 
     <reporting>
@@ -524,6 +526,7 @@
                 <jdk>[1.8,)</jdk>
             </activation>
             <build>
+            	<pluginManagement>
                 <plugins>
                     <plugin>
                         <artifactId>maven-compiler-plugin</artifactId>
@@ -541,6 +544,7 @@
                         </configuration>
                     </plugin>
                 </plugins>
+                </pluginManagement>
             </build>
             <reporting>
                 <plugins>
@@ -554,13 +558,13 @@
             </reporting>
         </profile>
         <profile>
-            <id>java9</id>
+            <id>java12</id>
             <activation>
                 <jdk>[1.9,)</jdk>
             </activation>
             <properties>
                 <!-- JDK 9 minimal source and target versions are 1.6 -->
-                <jdkVersion>1.6</jdkVersion>
+                <jdkVersion>12</jdkVersion>
             </properties>
             <build>
                 <plugins>
