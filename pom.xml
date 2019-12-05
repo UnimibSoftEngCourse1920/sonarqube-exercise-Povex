@@ -558,13 +558,13 @@
             </reporting>
         </profile>
         <profile>
-            <id>java12</id>
+            <id>java9</id>
             <activation>
                 <jdk>[1.9,)</jdk>
             </activation>
             <properties>
                 <!-- JDK 9 minimal source and target versions are 1.6 -->
-                <jdkVersion>12</jdkVersion>
+                <jdkVersion>1.9</jdkVersion>
             </properties>
             <build>
                 <plugins>
